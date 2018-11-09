@@ -1,0 +1,39 @@
+package javaapplication9;
+import java.util.Scanner;
+public class JavaApplication9 {
+    public static void main(String[] args) {
+        Scanner Scan = new Scanner(System.in);
+        int rightnum, guess, counter; 
+        //cheking if part of interval
+        do {
+            System.out.print("Enter a number to be Guess: ");
+            rightnum = Scan.nextInt();    
+        }
+            while ((rightnum > 1000)||(rightnum < 0));
+        //the hint
+        counter = 0;
+        do {System.out.println("Guess the number: ");
+            guess = Scan.nextInt(); 
+            //determine if first try
+            if (counter == 0){
+                if (rightnum%2 == 0){
+                System.out.println("HINT: The number is even.");
+                counter++;
+                }
+                else {
+                System.out.println("HINT: The number is odd.");
+                counter++;
+                }
+            }
+            else{
+                if (guess<rightnum){
+                    System.out.println("HINT: You need a higher number.");}
+                else{
+                    System.out.println("HINT: You need a lower number.");}        
+                }
+           }
+       while(guess!=rightnum);
+       //when guess is correct
+       System.out.println("Correct Answer!");
+     }
+}
