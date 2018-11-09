@@ -1,0 +1,111 @@
+import java.util.Scanner;
+
+public class javaapplication2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("What College are you in?");
+        String course = sc.next();
+        
+        if (course.equalsIgnoreCase("COAS")){
+         System.out.println("Enter Your Programs: ");
+         String programs = sc.next();
+         
+            if(programs.equalsIgnoreCase("BAE")){
+             System.out.println("You are in the " + programs);
+            }else if(programs.equalsIgnoreCase("BAPS")){
+             System.out.println("You are in the " + programs);
+            }else if(programs.equalsIgnoreCase("BAC")){
+             System.out.println("You are in the " + programs);
+            }else if(programs.equalsIgnoreCase("BSP")){
+             System.out.println("You are in the " + programs);
+             }
+             }else if (course.equalsIgnoreCase("CBA")){
+             System.out.println("Enter Your Programs: ");
+            String program = sc.next();
+         
+             if(program.equalsIgnoreCase("BSBA")){
+             System.out.println("You are in the " + program);
+             }else if(program.equalsIgnoreCase("BSE")){
+             System.out.println("You are in the " + program);
+            }else if(program.equalsIgnoreCase("BSOA")){
+             System.out.println("You are in the " + program);
+             }
+             }else if (course.equalsIgnoreCase("COA")){
+             System.out.println("Enter Your Programs: ");
+             String program = sc.next();
+         
+            if(program.equalsIgnoreCase("BSA")){
+             System.out.println("You are in the " + program);
+            }else if(program.equalsIgnoreCase("BSAT")){
+             System.out.println("You are in the " + program);
+            }else if(program.equalsIgnoreCase("BSMA")){
+             System.out.println("You are in the " + program);
+            }else if(program.equalsIgnoreCase("BSFA")){
+             System.out.println("You are in the " + program);
+             }
+             }else if (course.equalsIgnoreCase("COEA")){
+             System.out.println("Enter Your Programs: ");
+             String program = sc.next();
+            
+            if(program.equalsIgnoreCase("BOSA")){
+             System.out.println("You are in the" + program);
+             }else if(program.equalsIgnoreCase("BSCivE")){
+             System.out.println("You are in the " + program);
+             }else if(program.equalsIgnoreCase("BSComE")){
+             System.out.println("You are in the " + program);
+             }else if(program.equalsIgnoreCase("BSElecE")){
+             System.out.println("You are in the " + program);
+             }else if(program.equalsIgnoreCase("BSEnvSanE")){
+             System.out.println("You are in the " + program);
+             }
+             }else if (course.equalsIgnoreCase("CHTM")){
+              System.out.println("Enter Your Programs: ");
+                 String program = sc.next();
+         
+             if(program.equalsIgnoreCase("BSHM")){
+             System.out.println("You are in the " + program);
+            }else if(program.equalsIgnoreCase("BSTM")){
+             System.out.println("You are in the " + program);
+            }
+             }else if (course.equalsIgnoreCase("CITCS")){
+              System.out.println("Enter Your Programs: ");
+               String program = sc.next();
+         
+              if(program.equalsIgnoreCase("BSCS ")){
+             System.out.println("You are in the " + program);
+             }else if(program.equalsIgnoreCase("BSIS")){
+             System.out.println("You are in the " + program);
+             }else if(program.equalsIgnoreCase("BSIT")){
+             System.out.println("You are in the " + program);
+              }else if(program.equalsIgnoreCase("AST")){
+             System.out.println("You are in the " + program);
+             }
+             }else if (course.equalsIgnoreCase("CTE")){
+              System.out.println("Enter Your Programs: ");
+                 String program = sc.next();
+         
+             if(program.equalsIgnoreCase("BSEd-General")){
+             System.out.println("You are in the " + program);
+             }else if(program.equalsIgnoreCase("BSEEd")){
+             System.out.println("You are in the " + program);
+                 }else if(program.equalsIgnoreCase("BSSEd")){
+             System.out.println("You are in the " + program);
+            }
+             }else if (course.equalsIgnoreCase("CCJE")){
+             System.out.println("Enter Your Programs: ");
+                 String program = sc.next();
+         
+                    if(program.equalsIgnoreCase("BSC")){
+                 System.out.println("You are in the " + program);
+            }
+            }else if (course.equalsIgnoreCase("CON")){
+             System.out.println("Enter Your Programs: ");
+             String program = sc.next();
+
+             if(program.equalsIgnoreCase("BSN")){
+                 System.out.println("You are in the " + program);
+             }
+          }else{}
+
+    }
+}
