@@ -1,0 +1,52 @@
+package recursion;
+
+import java.util.Scanner;
+public class Recursion {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        displayer();
+        
+    }
+    
+    public static int myInput(){
+    int a;
+    Scanner sc = new Scanner (System.in);
+    System.out.println("Input the Fibonacci series");
+    a = sc.nextInt();
+    return a;
+    
+    }
+    public static void displayer(){
+    int a = myInput();
+    int x;
+    int y;
+    int column;
+    
+    for (column = 0; column <=a; column++){
+        System.out.print("f(" + column + ")" + "\t");
+    }
+    System.out.println("");
+    for(x = 0; x <= a; x++){
+        for(y = 0; y<=x; y++){
+        System.out.print(fibonacci(y)+ "\t");
+        }
+        System.out.println("");
+        }
+    
+    }
+    public static int fibonacci (int a){
+    if (a == 0){
+    return 0;
+    }
+    else if (a == 1){
+    return 1;
+    }
+    else{
+        return fibonacci(a-1) + fibonacci(a-2); 
+    }        
+        
+    }
+}
