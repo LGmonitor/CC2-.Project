@@ -1,0 +1,87 @@
+package continues;
+
+import java.util.Scanner;
+public class last {
+
+ 
+    public static void main(String[] args) {
+        identifier();
+        
+    }
+    static void identifier(){
+        Scanner s= new Scanner (System.in);
+        String FACT;
+        String FIBO;
+        boolean expression = false;
+    
+    do{
+        System.out.println("Between FACTORIAL or FIBONACCI which do you seek? Enter it: ");
+        String chosen =s.nextLine();
+        switch(chosen){
+            case "FACTORIAL":
+            case "Factorial":
+            case "factorial":
+            expression = true;
+                
+                System.out.println("Enter the size of your array: ");
+                int size=s.nextInt();
+                int ar[]= new int[size];
+                
+                System.out.println("Enter the values of your array: ");
+                for(int i=0;i<ar.length;i++){
+                   int row=s.nextInt();
+                   ar[i]= row;
+                 
+                }
+                System.out.println("The Fibonacci of your values: ");
+                for(int i=0;i<ar.length;i++){
+                System.out.print("f("+ ar[i]+ ")"+"\t");
+                
+                }
+                break;
+                
+            case "Fibonacci":
+            case "FIBONACCI":
+            case "fibonacci":
+            expression = true;
+                System.out.println("Enter the size of your array: ");
+                int sizes=s.nextInt();
+                int column[]= new int[sizes];
+                
+                System.out.println("Enter the values of your array");
+                for(int i=0;i<column.length;i++){
+                   int row1=s.nextInt();
+                   column[i]= row1;                 
+                    }
+                System.out.println("Factorial of your values: ");
+                for(int i=0;i<column.length;i++){
+                System.out.print(Nacci(column[i])+ "\t");
+                    
+                }
+                break;
+                
+        }
+        }   while(expression==false);
+        }//end of the void
+
+        static int Nacci(int n){
+        if (n<=1){
+         return n;
+        }
+        else{
+        return(Nacci(n-1)+Nacci(n-2));
+        }
+        }//endpoint
+        
+        static int Orial(int n){
+        if(n==0)
+        return 1;
+        else
+        return(n * Orial(n-1));
+    }
+}//end of class
+     
+
+ 
+    
+
